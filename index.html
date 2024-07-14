@@ -5,66 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人主页</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-            color: #333;
+        /* 基本重置 */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
         }
-        header, footer {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        /* 容器和布局 */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header {
             text-align: center;
-            padding: 1em;
-            background-color: #e2e2e5;
+            background: #0056b3;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
         }
         main {
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background: #e2e2e5;
+        }
+        /* 文本样式 */
+        h2 {
+            color: #0056b3;
+            margin: 20px 0;
         }
         p {
-            line-height: 1.6;
+            margin-bottom: 10px;
         }
         a {
-            color: #1a0dab;
+            color: #007bff;
+            text-decoration: none;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        a:hover {
+            text-decoration: underline;
+        }
+        /* 列表样式 */
+        ul {
+            list-style: none;
+            text-align: left;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+                box-shadow: none;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的个人主页</h1>
+        <h1>我的个人主页</h1>
     </header>
-    <main>
-        <section>
-            <h2>关于我</h2>
-            <p>你好，我是一个热爱编程和技术的程序员。欢迎访问我的个人网站。</p>
-            <p>你可以在这里找到我的项目展示、技术博客和联系方式。</p>
-        </section>
-        <section>
-            <h2>项目展示</h2>
-            <p>这里将展示我的一些编程项目和作品。</p>
-            <!-- 添加项目链接或图片 -->
-        </section>
-        <section>
-            <h2>联系方式</h2>
-            <p>如需联系，请通过以下方式与我连接：</p>
-            <ul>
-                <li>电子邮件: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>版权所有 © 2024 你的名字</p>
-    </footer>
+    <div class="container">
+        <main>
+            <section>
+                <h2>关于我</h2>
+                <p>欢迎来到我的个人网页！我是一个充满热情的程序员和技术爱好者。</p>
+                <p>在这里，你可以了解到我参与的项目、我对技术的见解以及如何与我联系。</p>
+            </section>
+            <section>
+                <h2>项目展示</h2>
+                <p>这部分将展示我参与开发的一些重要项目。</p>
+                <!-- 项目示例链接或图片 -->
+            </section>
+            <section>
+                <h2>联系方式</h2>
+                <ul>
+                    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                    <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>版权所有 &copy; 2024 你的名字</p>
+        </footer>
+    </div>
 </body>
 </html>
-
